@@ -149,7 +149,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <h2>Box Quote Maker</h2>
+      <h2>Box Calculator</h2>
       <div className="mainContainer">
         <Form
           fluid
