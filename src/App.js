@@ -51,6 +51,7 @@ export default function App() {
   const [fluteWT, setFluteWT] = React.useState(0);
   const [bottomWT, setBottomWT] = React.useState(0);
   const [cost, setCost] = React.useState(0);
+
   React.useEffect(() => {
     calculateGsmT();
     calculateSheetCutting();
@@ -329,7 +330,7 @@ export default function App() {
             </Form.Group>
           </Panel>
           <br />
-          <Panel header="Output" bordered shaded className= 'Output'>
+          <Panel header="Output" bordered shaded className="Output">
             <Form.Group controlId="weight" appearance>
               <Form.ControlLabel>Weight of Box:</Form.ControlLabel>
               <Form.Control
@@ -353,6 +354,40 @@ export default function App() {
           </Panel>
           <br />
           <Panel header="More Output" bordered shaded collapsible>
+            <Form.Group controlId="weight">
+              <Form.ControlLabel>Top Weight :</Form.ControlLabel>
+              <Form.Control
+                name="weight"
+                accepter={InputNumber}
+                readOnly={true}
+                value={(topWT / 1000).toFixed(3)}
+                prefix=""
+                postfix="KG"
+              />
+            </Form.Group>
+
+            <Form.Group controlId="weight">
+              <Form.ControlLabel>Flute Weight :</Form.ControlLabel>
+              <Form.Control
+                name="weight"
+                accepter={InputNumber}
+                readOnly={true}
+                value={(fluteWT / 1000).toFixed(3)}
+                prefix=""
+                postfix="KG"
+              />
+            </Form.Group>
+            <Form.Group controlId="weight">
+              <Form.ControlLabel>Back Weight :</Form.ControlLabel>
+              <Form.Control
+                name="weight"
+                accepter={InputNumber}
+                readOnly={true}
+                value={(bottomWT / 1000).toFixed(3)}
+                prefix=""
+                postfix="KG"
+              />
+            </Form.Group>
             <Form.Group controlId="weight">
               <Form.ControlLabel>Rate :</Form.ControlLabel>
               <Form.Control
