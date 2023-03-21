@@ -11,7 +11,9 @@ const data = {
   ply: [
     { label: 3, value: 3 },
     { label: 5, value: 5 },
-    { label: 7, value: 7 }
+    { label: 7, value: 7 },
+    { label: 9, value: 9 },
+    { label: 11, value: 11 }
   ],
   paperGSM: [
     { label: "100", value: 100 },
