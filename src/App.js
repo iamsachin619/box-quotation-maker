@@ -21,7 +21,10 @@ const data = {
     { label: "140", value: 140 },
     { label: "150", value: 150 },
     { label: "160", value: 160 },
-    { label: "180", value: 180 }
+    { label: "180", value: 180 },
+    { label: "200", value: 200 },
+    { label: "230", value: 230 },
+
   ]
 };
 const initFormValue = {
